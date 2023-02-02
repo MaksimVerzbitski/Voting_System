@@ -22,14 +22,12 @@ if ($updatevotes and $updatestatus) {
     alert("Voting successful");
     window.location="../partials/dashboard.php";
     
-    </script>'
+    </script>';
 
 } else {
     echo '<script>
     alert("Technical error !! Vote after sometime");
     window.location="../partials/dashboard.php";
     
-    </script>'
+    </script>';
 }
-
-?>
