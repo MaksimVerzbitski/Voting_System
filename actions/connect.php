@@ -1,14 +1,9 @@
 <?php
-session_start();
-$databaseHost = 'whserver.tptlive.ee';
-$databseUser = 'tpqaqkwg_root';
-$databasePassword = ')nCv-H=sVnK]';
-$databaseName = 'tpqaqkwg_voting_system';
 
-$connection = mysqli_connect($databaseHost, $databaseUser, $databasePassword, $databaseName);
+$connection = mysqli_connect('whserver.tptlive.ee', 'tpqaqkwg_root', ')nCv-H=sVnK]', 'tpqaqkwg_voting_system');
 if (!$connection) {
-    
-    echo 'Something Successful';
+
+    echo 'Error in connection... check mysqli_connect(?, ?, ?, ?)';
 } else {
     die(mysqli_error($connection));
 }
