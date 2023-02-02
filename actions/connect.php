@@ -1,7 +1,14 @@
 <?php
+$servername   = "whserver.tptlive.ee";
+$database = "tpqaqkwg_voting_system";
+$username = "cpses_tpo1bdxc6u";
+$password = "";
 
-$connection = mysqli_connect('whserver.tptlive.ee', 'cpses_tpo1bdxc6u', '', 'tpqaqkwg_voting_system');
-
-if (!$connection) {
-    die(mysqli_error($connection));
+// Create connection
+$connection = new mysqli($servername, $username, $password, $database);
+// Check connection
+if ($connection->connect_error) {
+    echo "Connection failed: " . $connection->connect_error;
 }
+echo "Connected successfully";
+?>
