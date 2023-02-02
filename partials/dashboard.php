@@ -59,9 +59,9 @@ if ($_SESSION['status'] == 1) {
                 <img src="../uploads/<?php echo $data['photo'] ?>" alt="User Image">
                 <br>
                 <br>
-                <strong class="text-dark h5">Name:</strong><?php echo $data['username']; ?><br><br>
-                <strong class="text-dark h5">Mobile:</strong><?php echo $data['mobile']; ?><br><br>
-                <strong class="text-dark h5">Status:</strong><?php echo $status; ?><br><br>
+                <strong class="text-dark h5">Name : </strong><?php echo $data['username']; ?><br><br>
+                <strong class="text-dark h5">Mobile : </strong><?php echo $data['mobile']; ?><br><br>
+                <strong class="text-dark h5">Status : </strong><?php echo $status; ?><br><br>
 
             </div>
         </div>
