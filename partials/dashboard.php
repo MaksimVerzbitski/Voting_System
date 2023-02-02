@@ -6,8 +6,6 @@ if ($_SESSION['status'] == 1) {
 } else {
     $status = '<b class="text-danger">Not Voted</b>';
 }
-
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -52,6 +50,8 @@ if ($_SESSION['status'] == 1) {
                 <form action="../actions/voting.php" method="post">
                     <input type="hidden" name="groupvotes" value="<?php echo $groups[$i]['votes'] ?>">
                     <input type="hidden" name="groupid" value="<?php echo $groups[$i]['id'] ?>">
+
+
                     <?php
                             if ($_SESSION['status'] == 1) {
                             ?>

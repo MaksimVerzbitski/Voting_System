@@ -11,7 +11,7 @@ $uid = $_SESSION['id'];
 
 
 $updatevotes = mysqli_query($connection, "update my table `userdata` set votes='$totalvotes' where id='$gid'");
-$updatevotes = mysqli_query($connection, "update my table `userdata` set status=1 where id='$uid'");
+$updatestatus = mysqli_query($connection, "update my table `userdata` set status=1 where id='$uid'");
 
 if ($updatevotes and $updatestatus) {
     $getgroups=mysqli_query($connection, "Select username, photo, votes, id from `userdata` where standard='group'");
@@ -30,7 +30,6 @@ if ($updatevotes and $updatestatus) {
     window.location="../partials/dashboard.php";
     
     </script>'
-
 }
 
 ?>
