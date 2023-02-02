@@ -25,7 +25,7 @@ if (strlen($password) < 8) {
 if ($password !== $cpassword) {
     array_push($errors, "Password does not match");
 }
-require_once "database/database.php";
+require_once "actions/connect.php";
 $sql = "SELECT * FROM userdata WHERE username = '$username'";
 $resultat = mysqli_query($connection, $sql);
 $rowCount = mysqli_num_rows($resultat);
