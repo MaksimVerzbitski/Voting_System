@@ -54,7 +54,7 @@
                         <option value="voter">Voter</option>
                     </select>
                     <button type="submit" class="btn btn-dark my-4">Register</button>
-                    <p>Already have an account? <a href="index.php" class="text-white">Login here</a></p>
+                    <p>Already have an account? <a href="../" class="text-white">Login here</a></p>
             </form>
         </div>
     </div>
