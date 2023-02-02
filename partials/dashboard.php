@@ -47,7 +47,7 @@ if ($_SESSION['status'] == 1) {
                     </div>
                 </div>
 
-                <form action="../actions/voting.php" method="POST">
+                <form action="../actions/voting.php" method="post">
                     <input type="hidden" name="groupvotes" value="<?php echo $groups[$i]['votes'] ?>">
                     <input type="hidden" name="groupid" value="<?php echo $groups[$i]['id'] ?>">
 

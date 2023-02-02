@@ -6,7 +6,7 @@ include('connect.php');
 $votes = $_POST['groupvotes'];
 $totalvotes = $votes + 1;
 
-$gid = $POST['groupid'];
+$gid = $_POST['groupid'];
 $uid = $_SESSION['id'];
 
 
