@@ -1,0 +1,23 @@
+{
+  "name": "tptmap",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrigsterI/TPTMap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DrigsterI/TPTMap/issues"
+  },
+  "homepage": "https://github.com/DrigsterI/TPTMap#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nunjucks": "^3.2.3"
+  }
+}
