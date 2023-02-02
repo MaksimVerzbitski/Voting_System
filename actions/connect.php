@@ -1,7 +1,7 @@
 <?php
 $servername   = "whserver.tptlive.ee";
 $database = "tpqaqkwg_voting_system";
-$username = "cpses_tpo1bdxc6u";
+$username = "cpses_tpo1bdxc6u@localhost";
 $password = "";
 
 // Create connection
@@ -11,4 +11,3 @@ if ($connection->connect_error) {
     echo "Connection failed: " . $connection->connect_error;
 }
 echo "Connected successfully";
-?>
