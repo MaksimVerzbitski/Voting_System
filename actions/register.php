@@ -20,8 +20,6 @@ if ($password != $cpassword) {
     move_uploaded_file($tmp_name, "../uploads/$image");
     $sql = "insert into `userdata` (username,mobile,password,photo,standard,status,votes) values ('$username','$mobile','$password','$image','$std',0,0)";
     $result = mysqli_query($connection, $sql);
-    echo 'mysqli_query($connection, $sql)';
-    echo '$result';
 
 
     if ($result) {

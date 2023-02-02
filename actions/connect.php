@@ -1,9 +1,7 @@
 <?php
 
-$connection = mysqli_connect('whserver.tptlive.ee', 'tpqaqkwg_root', ')nCv-H=sVnK]', 'tpqaqkwg_voting_system');
-if (!$connection) {
+$connection = mysqli_connect('whserver.tptlive.ee', 'cpses_tpo1bdxc6u', '', 'tpqaqkwg_voting_system');
 
-    echo 'Error in connection... check mysqli_connect(?, ?, ?, ?)';
-} else {
+if (!$connection) {
     die(mysqli_error($connection));
 }
