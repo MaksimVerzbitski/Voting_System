@@ -47,7 +47,7 @@ if ($_SESSION['status'] == 1) {
                     </div>
                 </div>
 
-                <form action="../actions/voting.php" method="post">
+                <form action="../actions/voting.php" method="post" id="vote_disable">
                     <input type="hidden" name="groupvotes" value="<?php echo $groups[$i]['votes'] ?>">
                     <input type="hidden" name="groupid" value="<?php echo $groups[$i]['id'] ?>">
 
@@ -55,7 +55,8 @@ if ($_SESSION['status'] == 1) {
                     <?php
                             if ($_SESSION['status'] == 1) {
                             ?>
-                    <button class="bg-success my-3 text-white px-3" onclick="this.disabled='true';">Voted</button>
+                    <button class="bg-success my-3 text-white px-3" onclick="this.disabled='true';"
+                        id="btn_dissable">Voted</button>
                     <?php
                             } else {
                             ?>
@@ -94,6 +95,27 @@ if ($_SESSION['status'] == 1) {
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+
+
+        $("#mvote_disable").submit(function(e) {
+
+
+
+            $("#btn_dissable").attr("disabled", true);
+
+
+
+            return true;
+
+
+
+        });
+
+    });
+    </script>
 </body>
 
 </html>
