@@ -23,7 +23,7 @@ if ($updatevotes and $updatestatus) {
     window.location="../partials/dashboard.php";
     
     </script>';
-} else if (!isset($updatevotes) || $updatevotes == '') {
+} else if (!isset($updatevotes) and $updatevotes == '1') {
     echo
     '<script>You have already Voted... Procede to logout or exit app
     window.location="../partials/dashboard.php";
