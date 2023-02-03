@@ -55,11 +55,12 @@ if ($_SESSION['status'] == 1) {
                     <?php
                             if ($_SESSION['status'] == 1) {
                             ?>
-                    <button class="bg-success my-3 text-white px-3" value="Voted" disabled>Voted</button>
+                    <button class="bg-success my-3 text-white px-3" onclick="this.disabled='true';">Voted</button>
                     <?php
                             } else {
                             ?>
-                    <button class="bg-danger my-3 text-white px-3" type="submit">Vote</button>
+                    <button class="bg-danger my-3 text-white px-3" onclick="this.disabled='false';"
+                        type="submit">Vote</button>
                     <?php
                             }
                             ?>
