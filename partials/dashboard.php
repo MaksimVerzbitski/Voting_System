@@ -40,9 +40,9 @@ if ($_SESSION['status'] == 1) {
                         <img src="../uploads/<?php echo $groups[$i]['photo'] ?>" alt="Group Image">
                     </div>
                     <div class="col-md-8">
-                        <strong class="text-dark h5">Group name:</strong><?php echo $groups[$i]['username'] ?>
+                        <strong class="text-dark h5">Group name : </strong><?php echo $groups[$i]['username'] ?>
                         <br>
-                        <strong class="text-dark h5">Votes:</strong><?php echo $groups[$i]['votes'] ?>
+                        <strong class="text-dark h5">Votes : </strong><?php echo $groups[$i]['votes'] ?>
                         <br>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ if ($_SESSION['status'] == 1) {
                     <?php
                             if ($_SESSION['status'] == 1) {
                             ?>
-                    <button class="bg-success my-3 text-white px-3">Voted</button>
+                    <button class="bg-success my-3 text-white px-3" value="Voted" disabled>Voted</button>
                     <?php
                             } else {
                             ?>
