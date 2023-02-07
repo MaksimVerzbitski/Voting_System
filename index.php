@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
@@ -20,6 +19,7 @@
         <h2 class="text-center py-3">Login</h2>
         <div class="container text-center">
             <form action="./actions/login.php" method="POST">
+
                 <div class="mb-3">
                     <input type="text" class="form-control w-75 m-auto" name="username"
                         placeholder="Enter your username: " required="required">
