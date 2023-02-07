@@ -53,7 +53,7 @@
                 echo "<p style='color: red;'>" . $error . "</p>";
             }
             ?>
-            <form action="./actions/login.php" method="POST">
+            <form action="./index.php" method="POST">
 
                 <div class="mb-3">
                     <input type="text" class="form-control w-75 m-auto" name="username" placeholder="Enter your username: " required="required">
@@ -81,8 +81,6 @@
         </div>
     </div>
 
-
-    <script src="" async defer></script>
 </body>
 
 </html>
