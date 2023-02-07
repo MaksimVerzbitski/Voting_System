@@ -43,37 +43,42 @@
                     $_SESSION['status'] = $data['status'];
                     $_SESSION['data'] = $data;
 
-                    header("Location: ../partials/dashboard.php");
+                    header("Location: ./partials/dashboard.php");
                     exit;
                 } else {
                     $error = "Invalid username or password. Please try again.";
                 }
             }
             ?>
-            <form action="./index.php" method="POST">
+            <form action="index.php" method="POST">
 
-                <div class="mb-3">
+                <div class="form-group mb-3">
                     <input type="text" class="form-control w-75 m-auto" name="username" placeholder="Enter your username: " required="required">
 
                 </div>
-                <div class="mb-3">
+                <div class="form-group mb-3">
 
                     <input type="text" class="form-control w-75 m-auto" name="mobile" placeholder="Enter your mobile number: " required="required" maxlength="10" minlength="10">
                 </div>
-                <div class="mb-3">
+                <div class="form-group mb-3">
 
                     <input type="password" class="form-control w-75 m-auto" name="password" placeholder="Enter your password: " required="required">
 
                 </div>
-                <div class="mb-3">
+                <div class="form-select mb-3">
 
                     <select name="std" class="form-select w-75 m-auto">
                         <option value="group">Group</option>
                         <option value="voter">Voter</option>
                     </select>
+                </div>
+                <div class="form-btn mb-3">
                     <button type="submit" class="btn btn-dark my-4">Login</button>
+                </div>
+                <div class ="form-group">
                     <p>Don't have an account <a href="./partials/registration.php" class="text-white">Register here</a>
                     </p>
+                </div>
             </form>
         </div>
     </div>
