@@ -1,3 +1,4 @@
+</html>
 <!DOCTYPE html>
 <html>
 
@@ -47,10 +48,6 @@
                 } else {
                     $error = "Invalid username or password. Please try again.";
                 }
-            }
-
-            if (!empty($error)) {
-                echo "<p style='color: red;'>" . $error . "</p>";
             }
             ?>
             <form action="./index.php" method="POST">
