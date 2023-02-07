@@ -1,7 +1,7 @@
 <?php
 session_start();
 include('connect.php');
-
+/*
 $username = $_POST['username'];
 $mobile = $_POST['mobile'];
 $password = $_POST['password'];
@@ -49,10 +49,7 @@ if (mysqli_num_rows($result) > 0) {
     </script>';
 }
 
-/* 
-session_start();
-include('connect.php');
-
+*/
 $username = $_POST['username'];
 $mobile = $_POST['mobile'];
 $password = $_POST['password'];
@@ -84,5 +81,3 @@ if (empty($username) || empty($mobile) || empty($password) || empty($std)) {
 if (!empty($error)) {
     echo "<p style='color: red;'>" . $error . "</p>";
 }
-
-*/
